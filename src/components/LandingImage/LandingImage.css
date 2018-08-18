@@ -1,0 +1,30 @@
+.landing-image {
+  height: calc(100vh - 70px);
+  width: 100vw;
+  position: relative;
+  background-image: url("./adam-lindsay.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.landing-image img {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.landing-countdown {
+  display: flex;
+}
+
+.landing-countdown div {
+  padding: 10px;
+}
