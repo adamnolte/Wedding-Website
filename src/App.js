@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import LandingImage from './components/LandingImage/LandingImage';
 import Navbar from './components/Navbar/Navbar';
+import LandingImage from './components/LandingImage/LandingImage';
+import OurStory from './components/OurStory/OurStory';
 import './App.css';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
       <div>
         <Navbar />
         <LandingImage />
+        <OurStory />
       </div>
     );
   }
