@@ -4,6 +4,32 @@
   padding-bottom: 40px;
 }
 
-.our-story-wrapper div{
-  flex: 0 0 50%;
+.our-story-wrapper > div {
+  flex: 0 0 calc(50% - 40px);
+  height: 450px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.our-story-wrapper .image-grid img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.slick-dots {
+  bottom: 0;
+}
+
+.our-story-header {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.our-story-text {
+  text-align: justify;
+  line-height: 20px;
 }

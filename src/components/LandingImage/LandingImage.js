@@ -34,7 +34,7 @@ class LandingImage extends Component {
 
     const dur = moment.duration(diff, 'seconds');
     this.setState({
-      days: parseInt(dur.asDays()),
+      days: parseInt(dur.asDays(), 10),
       hours: dur.hours(),
       minutes: dur.minutes(),
       seconds: dur.seconds(),
@@ -45,13 +45,25 @@ class LandingImage extends Component {
     return (
       <div className={'landing-image'}>
         <div>
-          <div>Adam &#38; Lindsay</div>
-          <div>June 1, 2019</div>
+          <div className={'landing-title'}>Adam &#38; Lindsay</div>
+          <div className={'landing-title'}>June 1, 2019</div>
           <div className={'landing-countdown'}>
-            <div>{this.state.days} days</div>
-            <div>{this.state.hours} hours</div>
-            <div>{this.state.minutes} minutes</div>
-            <div>{this.state.seconds} seconds</div>
+            <div>
+              {this.state.days}
+              <div>days</div>
+            </div>
+            <div>
+              {this.state.hours}
+              <div>hours</div>
+            </div>
+            <div>
+              {this.state.minutes}
+              <div>minutes</div>
+            </div>
+            <div>
+              {this.state.seconds}
+              <div>seconds</div>
+            </div>
           </div>
         </div>
       </div>

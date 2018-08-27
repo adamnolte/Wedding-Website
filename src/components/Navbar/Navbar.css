@@ -8,8 +8,23 @@
   align-items: center;
   background-color: #fff;
   z-index: 100;
+  display: flex;
+  justify-content: space-around;
 }
 
-.navbar-wrapper a {
+.navbar-wrapper > div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-wrapper .nav-logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.navbar-wrapper a, .navbar-wrapper a:visited {
   padding: 0 20px;
+  color: #000;
+  text-decoration: none;
 }

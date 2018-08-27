@@ -1,0 +1,14 @@
+.event-details {
+  display: flex;
+}
+
+.event-details > div {
+  flex: 0 0 50%;
+}
+
+.event-details img {
+  height: 450px;
+  width: auto;
+  max-width: 90%;
+  object-fit: cover;
+}

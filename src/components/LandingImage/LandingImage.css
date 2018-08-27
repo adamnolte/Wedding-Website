@@ -12,19 +12,28 @@
   justify-content: space-around;
   text-align: center;
   margin-top: 70px;
+  font-family: 'Great Vibes', cursive;
 }
 
-.landing-image img {
-  flex-basis: 50%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  object-fit: cover;
+.landing-title {
+  font-size: 45px;
 }
 
 .landing-countdown {
   display: flex;
 }
 
-.landing-countdown div {
+.landing-countdown > div {
+  margin: 10px;
   padding: 10px;
+  border: #000 2px solid;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  border-bottom: none;
+  font-size: 26px;
+  height: 70px;
+  width: 140px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #000;
 }
