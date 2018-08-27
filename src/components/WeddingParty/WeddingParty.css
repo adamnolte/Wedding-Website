@@ -1,0 +1,37 @@
+.wedding-party-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.people-wrapper {
+  display: flex;
+}
+
+.people-wrapper > div {
+  flex: 0 0 50%;
+}
+
+.list-of-people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.person img {
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.person-description {
+  text-align: center;
+  margin-top: 10px;
+}

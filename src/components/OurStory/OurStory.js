@@ -31,7 +31,7 @@ const OurStory = () => {
       </div>
       <div>
         <div className={'our-story-header'}>
-          ~ Our Story ~
+          Our Story
         </div>
         <div className={'our-story-text'}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lorem maximus, mattis elit sed, condimentum sem. Pellentesque vulputate tincidunt lacus ac maximus. Quisque a lectus elementum, congue ligula et, suscipit lectus. Sed dolor ex, eleifend a imperdiet posuere, dictum in velit. Duis cursus eros in erat commodo consequat. Integer rhoncus tincidunt lorem, posuere ultrices libero maximus vitae. Duis sollicitudin consequat ultricies. Etiam tincidunt lectus eget lacus cursus, blandit bibendum sapien pellentesque. Aliquam vehicula purus et vulputate dictum. Praesent ligula odio, auctor ac sagittis sed, porta nec sem.
