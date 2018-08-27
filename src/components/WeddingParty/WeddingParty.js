@@ -99,7 +99,7 @@ const WeddingParty = () => {
   ];
   return (
     <div className={'wedding-party'} id={'WeddingParty'}>
-      <div className={'wedding-party-title'}>
+      <div className={'header'}>
         Wedding Party
       </div>
       <div className={'people-wrapper'}>

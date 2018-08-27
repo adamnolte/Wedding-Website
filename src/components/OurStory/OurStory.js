@@ -30,7 +30,7 @@ const OurStory = () => {
         </Slider>
       </div>
       <div>
-        <div className={'our-story-header'}>
+        <div className={'header'}>
           Our Story
         </div>
         <div className={'our-story-text'}>

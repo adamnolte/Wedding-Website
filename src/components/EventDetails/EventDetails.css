@@ -1,14 +1,46 @@
-.event-details {
+.event-details-inner {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.event-details > div {
-  flex: 0 0 50%;
-}
-
-.event-details img {
+.event-details-inner > div {
   height: 450px;
-  width: auto;
-  max-width: 90%;
+  width: calc(50% - 40px);
+  padding: 0 20px;
+  position: relative;
+}
+
+.event-details-inner img {
+  height: 450px;
+  width: 100%;
   object-fit: cover;
+  opacity: .8;
+}
+
+.event-details-overlay {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 450px;
+  width: calc(100% - 40px);
+  background-color: rgba(0,0,0,.3);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+}
+
+.overlay-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  margin-bottom: 10px;
 }

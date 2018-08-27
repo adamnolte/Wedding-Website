@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className={'navbar-wrapper'}>
       <div>
-        <div className={'nav-logo'}>Newly Nolte</div>
+        <div className={'nav-logo'}>#NewlyNolte</div>
         <a href="#">Home</a>
         <a href="#OurStory">Our Story</a>
         <a href="#WeddingParty">Wedding Party</a>
