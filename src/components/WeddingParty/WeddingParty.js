@@ -109,22 +109,6 @@ const WeddingParty = () => {
   return (
     <div className={'wedding-party'} id={'WeddingParty'}>
       <div className={'header'}>
-        Groomsmen
-      </div>
-      <div className={'list-of-people'}>
-        {
-          groomsmen.map((groomsman) => {
-            return (
-              <Person
-                imgSrc={groomsman.imgSrc}
-                name={groomsman.name}
-                title={groomsman.title}
-              />
-            );
-          })
-        }
-      </div>
-      <div className={'header'}>
         Bridesmaids
       </div>
       <div className={'list-of-people'}>
@@ -132,9 +116,27 @@ const WeddingParty = () => {
           bridesmaids.map((bridesmaid) => {
             return (
               <Person
+                key={bridesmaid.name}
                 imgSrc={bridesmaid.imgSrc}
                 name={bridesmaid.name}
                 title={bridesmaid.title}
+              />
+            );
+          })
+        }
+      </div>
+      <div className={'header'}>
+        Groomsmen
+      </div>
+      <div className={'list-of-people'}>
+        {
+          groomsmen.map((groomsman) => {
+            return (
+              <Person
+                key={groomsman.name}
+                imgSrc={groomsman.imgSrc}
+                name={groomsman.name}
+                title={groomsman.title}
               />
             );
           })

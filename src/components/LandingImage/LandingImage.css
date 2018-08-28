@@ -24,7 +24,7 @@
 
 .landing-countdown {
   position: absolute;
-  top: 20px;
+  top: 0;
   right: 20px;
   text-align: center;
 }
