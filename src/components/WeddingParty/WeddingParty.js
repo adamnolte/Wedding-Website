@@ -26,84 +26,84 @@ const WeddingParty = () => {
     {
       imgSrc: Brett,
       name: 'Brett Nolte',
-      title: 'Best Man',
+      title: 'Best Man - Brother of the Groom',
     },
     {
       imgSrc: Jake,
       name: 'Jacob Munson',
-      title: 'Groomsman',
+      title: 'Friend of Groom',
     },
     {
       imgSrc: Nick,
       name: 'Nick Meservey',
-      title: 'Groomsman',
+      title: 'Friend of Groom',
     },
     {
       imgSrc: Jared,
       name: 'Jared Gray',
-      title: 'Groomsman',
+      title: 'Friend of Groom',
     },
     {
       imgSrc: Joe,
       name: 'Joseph Eggerman',
-      title: 'Groomsman',
+      title: 'Friend of Groom',
     },
     {
       imgSrc: Beffa,
       name: 'Sam Beffa',
-      title: 'Groomsman',
+      title: 'Friend of Groom',
     },
     {
       imgSrc: Kyle,
       name: 'Kyle Bayer',
-      title: 'Groomsman',
+      title: 'Friend of Groom',
     },
     {
       imgSrc: Brian,
       name: 'Brian Hacker',
-      title: 'Groomsman',
+      title: 'Friend of Groom',
     },
   ];
   const bridesmaids = [
     {
       imgSrc: Brittany,
       name: 'Brittany Pavich',
-      title: 'Maid of Honor',
+      title: 'Maid of Honor - Sister of the Bride',
     },
     {
       imgSrc: Alyssa,
       name: 'Alyssa Pavich',
-      title: 'Maid of Honor',
+      title: 'Maid of Honor - Sister of the Bride',
     },
     {
       imgSrc: Caroline,
       name: 'Caroline Watkins',
-      title: 'Bridesmaid',
+      title: 'Friend of the Bride',
     },
     {
       imgSrc: Taylor,
       name: 'Taylor Proudfoot',
-      title: 'Bridesmaid',
+      title: 'Friend of the Bride',
     },
     {
       imgSrc: Nicole,
-      name: 'Nicole Mundy',
-      title: 'Bridesmain',
+      name: 'Nicole Mondi',
+      title: 'Cousin of the Bride',
     },
     {
       imgSrc: Jessica,
       name: 'Jessica Nolte',
-      title: 'Bridesmaid',
+      title: 'Sister of the Groom',
     },
     {
       imgSrc: Klaira,
-      name: 'Klaira',
-      title: 'Bridesmaid',
+      name: 'Klaira Ekern',
+      title: 'Friend of the Bride',
     },
     {
       imgSrc: Lauren,
       name: 'Lauren Pavich',
-      title: 'Bridesmaid',
+      title: 'Cousin of the Bride',
     },
   ];
   return (

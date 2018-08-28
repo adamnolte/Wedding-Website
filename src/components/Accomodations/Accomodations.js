@@ -3,13 +3,14 @@ import './Accomodations.css';
 
 const Accomodations = () => {
   return (
-    <div className={'accomodations'} id={'Accodomations'}>
+    <div className={'accomodations'} id={'Accomodations'}>
       <div className={'accomodations-inner'}>
         <div>
           <div className={'header'}>Accomodations</div>
           <div className={'accomodations-text'}>
             <div>Oak Brook Hills Hilton</div>
             <div>3500 Midwest Rd, Oak Brook, IL 60523</div>
+            <div>Tel: +1-630-850-5555</div>
             <div>Room Block Available - Mention Nolte/Pavich Wedding</div>
           </div>
         </div>
