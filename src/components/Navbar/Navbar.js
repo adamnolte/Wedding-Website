@@ -12,7 +12,8 @@ const Navbar = () => {
         <a href="#OurStory">Our Story</a>
         <a href="#WeddingParty">Wedding Party</a>
         <a href="#EventDetails">Event Details</a>
-        <a href="#Accomadtions">Accomodations</a>
+        <a href="#Accomodations">Accomodations</a>
+        <a href="#Registry">Registry</a>
       </div>
     </div>
   );
