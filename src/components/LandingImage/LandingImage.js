@@ -45,8 +45,10 @@ class LandingImage extends Component {
     return (
       <div className={'landing-image'}>
         <div>
-          <div className={'landing-title'}>Adam &#38; Lindsay</div>
-          <div className={'landing-title'}>June 1, 2019</div>
+          <div className={'landing-title'}>
+            <div>Adam &#38; Lindsay</div>
+            <div>June 1, 2019</div>
+          </div>
           <div className={'landing-countdown'}>
             <div>
               {this.state.days}

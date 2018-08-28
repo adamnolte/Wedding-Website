@@ -6,11 +6,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: center;
   margin-top: 70px;
   font-family: 'Great Vibes', cursive;
 }
@@ -21,23 +16,22 @@
 
 .landing-title {
   font-size: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: center;
 }
 
 .landing-countdown {
-  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
 }
 
 .landing-countdown > div {
   margin: 10px;
   padding: 10px;
-  border: #000 2px solid;
-  border-top-left-radius: 70px;
-  border-top-right-radius: 70px;
-  border-bottom: none;
-  font-size: 30px;
-  height: 70px;
-  width: 140px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  font-size: 40px;
   color: #000;
 }
