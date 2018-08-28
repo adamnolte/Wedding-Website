@@ -13,7 +13,6 @@ const Navbar = () => {
         <a href="#WeddingParty">Wedding Party</a>
         <a href="#EventDetails">Event Details</a>
         <a href="#Accomodations">Accomodations</a>
-        <a href="#Registry">Registry</a>
       </div>
     </div>
   );
