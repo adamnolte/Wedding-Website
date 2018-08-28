@@ -1,3 +1,7 @@
+.wedding-party {
+  padding: 20px 0;
+}
+
 .people-wrapper {
   display: flex;
 }
@@ -19,7 +23,7 @@
 }
 
 .person img {
-  height: 300px;
+  height: 250px;
   width: 250px;
   object-fit: cover;
 }

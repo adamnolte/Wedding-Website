@@ -2,13 +2,22 @@ import React from 'react';
 
 import Person from './Person';
 import Beffa from './Groomsmen/Beffa.jpg';
-import Brett from './Groomsmen/Brett.PNG';
-import Brian from './Groomsmen/Brian.PNG';
-import Jake from './Groomsmen/Jake.PNG';
+import Brett from './Groomsmen/Brett.jpg';
+import Brian from './Groomsmen/Brian.jpg';
+import Jake from './Groomsmen/Jake.png';
 import Jared from './Groomsmen/Jared.jpg';
-import Joe from './Groomsmen/Joe.PNG';
-import Kyle from './Groomsmen/Kyle.PNG';
-import Nick from './Groomsmen/Nick.PNG';
+import Joe from './Groomsmen/Joe.jpg';
+import Kyle from './Groomsmen/Kyle.jpg';
+import Nick from './Groomsmen/Nick.jpg';
+
+import Alyssa from './Bridesmaids/Alyssa.jpg';
+import Brittany from './Bridesmaids/Brittany.jpg';
+import Caroline from './Bridesmaids/Caroline.jpg';
+import Jessica from './Bridesmaids/Jessica.jpg';
+import Klaira from './Bridesmaids/Klaira.jpg';
+import Lauren from './Bridesmaids/Lauren.jpg';
+import Nicole from './Bridesmaids/Nicole.jpg';
+import Taylor from './Bridesmaids/Taylor.jpg';
 
 import './WeddingParty.css';
 
@@ -57,78 +66,79 @@ const WeddingParty = () => {
   ];
   const bridesmaids = [
     {
-      imgSrc: Brett,
+      imgSrc: Brittany,
       name: 'Brittany Pavich',
       title: 'Maid of Honor',
     },
     {
-      imgSrc: Jake,
+      imgSrc: Alyssa,
       name: 'Alyssa Pavich',
       title: 'Maid of Honor',
     },
     {
-      imgSrc: Nick,
+      imgSrc: Caroline,
       name: 'Caroline Watkins',
       title: 'Bridesmaid',
     },
     {
-      imgSrc: Jared,
+      imgSrc: Taylor,
       name: 'Taylor Proudfoot',
       title: 'Bridesmaid',
     },
     {
-      imgSrc: Joe,
+      imgSrc: Nicole,
       name: 'Nicole Mundy',
       title: 'Bridesmain',
     },
     {
-      imgSrc: Beffa,
+      imgSrc: Jessica,
       name: 'Jessica Nolte',
       title: 'Bridesmaid',
     },
     {
-      imgSrc: Kyle,
+      imgSrc: Klaira,
       name: 'Klaira',
       title: 'Bridesmaid',
     },
     {
-      imgSrc: Brian,
-      name: 'Megan Pavich',
+      imgSrc: Lauren,
+      name: 'Lauren Pavich',
       title: 'Bridesmaid',
     },
   ];
   return (
     <div className={'wedding-party'} id={'WeddingParty'}>
       <div className={'header'}>
-        Wedding Party
+        Groomsmen
       </div>
-      <div className={'people-wrapper'}>
-        <div className={'list-of-people'}>
-          {
-            groomsmen.map((groomsman) => {
-              return (
-                <Person
-                  imgSrc={groomsman.imgSrc}
-                  name={groomsman.name}
-                  title={groomsman.title}
-                />
-              );
-            })
-          }
-        </div>
-        <div className={'list-of-people'}>
-          {
-            bridesmaids.map((bridesmaid) => {
-              return (
-                <Person
-                  imgSrc={bridesmaid.imgSrc}
-                  name={bridesmaid.name}
-                  title={bridesmaid.title}
-                />
-              );
-            })
-          }
-        </div>
+      <div className={'list-of-people'}>
+        {
+          groomsmen.map((groomsman) => {
+            return (
+              <Person
+                imgSrc={groomsman.imgSrc}
+                name={groomsman.name}
+                title={groomsman.title}
+              />
+            );
+          })
+        }
+      </div>
+      <div className={'header'}>
+        Bridesmaids
+      </div>
+      <div className={'list-of-people'}>
+        {
+          bridesmaids.map((bridesmaid) => {
+            return (
+              <Person
+                imgSrc={bridesmaid.imgSrc}
+                name={bridesmaid.name}
+                title={bridesmaid.title}
+              />
+            );
+          })
+        }
       </div>
     </div>
   );
