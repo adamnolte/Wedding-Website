@@ -28,13 +28,17 @@
 .our-story-slide {
   display: flex;
   height: 450px;
+  font-size: 20px;
+  align-items: center;
 }
 
 .our-story-slide > div {
   flex: 0 0 50%;
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
+}
+
+.our-story-slide > div:nth-child(2) {
+  flex: 0 0 calc(50% - 20px);
+  padding-right: 20px;
 }
 
 .our-story-wrapper img {
