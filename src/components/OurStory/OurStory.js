@@ -5,10 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import Harpos from './Harpos.jpg';
 import Engaged from './Engaged.jpg';
-import Formal from './Formal.jpg';
 import Tailgating from './Tailgating.jpg';
 import Chicago from './Chicago.jpg';
-import TigerPlaza from './TigerPlaza.jpg';
 import './OurStory.css';
 
 const OurStory = () => {

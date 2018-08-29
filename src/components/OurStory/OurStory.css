@@ -4,6 +4,11 @@
   position: relative;
   background-color: rgba(0,0,0,.4);
   color: #fff;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+}
+
+.our-story-wrapper div {
+  outline: none;
 }
 
 .our-story-wrapper::before {
@@ -48,6 +53,14 @@
   object-fit: contain;
   margin-left: auto;
   margin-right: auto;
+}
+
+.slick-next {
+  right: -30px;
+}
+
+.slick-prev {
+  left: -30px;
 }
 
 .slick-next, .slick-prev {
