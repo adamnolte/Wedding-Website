@@ -12,7 +12,7 @@
   justify-content: space-around;
 }
 
-.navbar-wrapper > div {
+.navbar-wrapper > div:first-child {
   display: flex;
   align-items: center;
 }
@@ -21,10 +21,81 @@
   font-family: 'Great Vibes', cursive;
   font-size: 30px;
   padding-right: 20px;
+  z-index: 100;
+  background-color: #fff;
 }
 
-.navbar-wrapper a, .navbar-wrapper a:visited {
+.nav-links-desktop a, .nav-links-desktop a:visited {
   padding: 0 20px;
   color: #000;
   text-decoration: none;
+}
+
+.nav-hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar-wrapper {
+    justify-content: space-between;
+  }
+
+  .navbar-wrapper > div:first-child {
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .nav-logo {
+    padding-left: 20px;
+  }
+
+  .nav-links-desktop {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: block;
+    padding-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .nav-links-mobile {
+    position: fixed;
+    top: 0px;
+    opacity: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    animation-name: navSlideDown;
+    animation-fill-mode: forwards;
+    animation-duration: .3s;
+    z-index: 99;
+  }
+
+  .nav-links-mobile a, .nav-links-mobile a:visited {
+    font-size: 24px;
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none;
+    z-index: 99;
+  }
+}
+
+@keyframes navSlideDown {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 70px;
+    opacity: 1;
+  }
 }
