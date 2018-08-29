@@ -34,6 +34,22 @@
   font-style: italic;
 }
 
+@media only screen and (min-width: 601px) and (max-width: 920px) {
+  .accomodations-inner {
+    flex-wrap: wrap;
+  }
+
+  .accomodations-inner > div {
+    flex: 0 0 50%;
+    margin-bottom: 20px;
+  }
+
+  .accomodations-inner > div:nth-child(2) {
+    flex: 0 0 100%;
+    order: 3; 
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .accomodations-inner {
     flex-wrap: wrap;
@@ -42,5 +58,9 @@
   .accomodations-inner > div {
     flex: 0 0 100%;
     margin-bottom: 20px;
+  }
+
+  .accomodations-inner > div:nth-child(2) {
+    order: 3; 
   }
 }
