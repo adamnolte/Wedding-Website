@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 .header {
@@ -9,4 +10,10 @@ body {
   font-weight: 600;
   margin-bottom: 20px;
   font-family: 'Great Vibes', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
 }
