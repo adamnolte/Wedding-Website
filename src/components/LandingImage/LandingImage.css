@@ -35,3 +35,31 @@
   font-size: 40px;
   color: #000;
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1050px) {
+  .landing-title {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .landing-title {
+    bottom: 25px;
+    top: unset;
+    left: 0;
+    right: 0;
+  }
+
+  .landing-countdown {
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .landing-countdown > div {
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
+  }
+}
