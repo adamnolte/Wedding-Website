@@ -1,5 +1,6 @@
 .wedding-party {
-  padding: 20px 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .people-wrapper {
@@ -14,6 +15,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.list-of-people:first-child {
+  margin-bottom: 20px;
 }
 
 .person {
