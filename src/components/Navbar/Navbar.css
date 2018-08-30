@@ -25,10 +25,16 @@
   background-color: #fff;
 }
 
-.nav-links-desktop a, .nav-links-desktop a:visited {
+.nav-links-desktop {
+  display: flex;
+}
+
+.nav-links-desktop .link {
   padding: 0 20px;
   color: #000;
   text-decoration: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .nav-hamburger {
@@ -75,7 +81,7 @@
     z-index: 99;
   }
 
-  .nav-links-mobile a, .nav-links-mobile a:visited {
+  .nav-links-mobile .link {
     font-size: 24px;
     padding: 15px 20px;
     color: #000;

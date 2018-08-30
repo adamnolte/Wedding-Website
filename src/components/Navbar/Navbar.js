@@ -1,18 +1,52 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import scrollTo from 'scroll-to';
 import './Navbar.css';
 
-/*eslint-disable jsx-a11y/href-no-hash*/
-
-const NavLinks = ({ className, closeNav }) => {
+const NavLinks = ({ className, navigate }) => {
   return (
     <div className={className}>
-      <a href="#" onClick={closeNav}>Home</a>
-      <a href="#OurStory" onClick={closeNav}>Our Story</a>
-      <a href="#WeddingParty" onClick={closeNav}>Wedding Party</a>
-      <a href="#EventDetails" onClick={closeNav}>Event Details</a>
-      <a href="#Accomodations" onClick={closeNav}>Accomodations</a>
+      <div
+        className={'link'}
+        role={'button'}
+        tabIndex={0}
+        onClick={() => { navigate('top'); }}
+      >
+        Home
+      </div>
+      <div
+        className={'link'}
+        role={'button'}
+        tabIndex={0}
+        onClick={() => { navigate('OurStory'); }}
+      >
+        Our Story
+        </div>
+      <div
+        className={'link'}
+        role={'button'}
+        tabIndex={0}
+        onClick={() => { navigate('WeddingParty'); }}
+      >
+        Wedding Party
+      </div>
+      <div
+        className={'link'}
+        role={'button'}
+        tabIndex={0}
+        onClick={() => { navigate('EventDetails'); }}
+      >
+        Event Details
+      </div>
+      <div
+        className={'link'}
+        role={'button'}
+        tabIndex={0}
+        onClick={() => { navigate('Accomodations'); }}
+      >
+        Accomodations
+      </div>
     </div>
   );
 }
@@ -42,7 +76,11 @@ class Navbar extends Component {
     });
   }
 
-  closeNav = () => {
+  navigate= (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      scrollTo(0, element.getBoundingClientRect().top - document.body.getBoundingClientRect().top);
+    }
     if (this.state.navOpen) {
       this.setState({
         navOpen: false,
@@ -65,13 +103,13 @@ class Navbar extends Component {
       <div className={'navbar-wrapper'} ref={this.setRef}>
         <div>
           <div className={'nav-logo'}>#NewlyNolte</div>
-          {<NavLinks className={'nav-links-desktop'} closeNav={this.closeNav} />}
+          {<NavLinks className={'nav-links-desktop'} navigate={this.navigate} />}
           <div className={'nav-hamburger'}>
             <FontAwesomeIcon onClick={this.toggleNav} icon={faBars} />
           </div>
         </div>
         {
-          this.state.navOpen && <NavLinks className={'nav-links-mobile'} closeNav={this.closeNav}/>
+          this.state.navOpen && <NavLinks className={'nav-links-mobile'} navigate={this.navigate}/>
         }
       </div>
     );

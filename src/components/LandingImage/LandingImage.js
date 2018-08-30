@@ -43,7 +43,7 @@ class LandingImage extends Component {
 
   render() {
     return (
-      <div className={'landing-image'}>
+      <div className={'landing-image'} id={'top'}>
         <div>
           <div className={'landing-title'}>
             <div>Adam &#38; Lindsay</div>
