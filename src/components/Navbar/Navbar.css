@@ -35,6 +35,23 @@
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  position: relative;
+}
+
+.nav-links-desktop .link::after {
+  content: '';
+  transform: scaleX(0);
+  background-color: #000;
+  transition: all 0.2s ease;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.nav-links-desktop .link:hover::after {
+  transform: scaleX(1);
 }
 
 .nav-hamburger {
@@ -87,6 +104,8 @@
     color: #000;
     text-decoration: none;
     z-index: 99;
+    cursor: pointer;
+    outline: none;
   }
 }
 
