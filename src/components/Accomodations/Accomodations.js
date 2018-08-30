@@ -10,7 +10,7 @@ const Accomodations = () => {
           <div className={'accomodations-text'}>
             <div>Oak Brook Hills Hilton</div>
             <div>3500 Midwest Rd, Oak Brook, IL 60523</div>
-            <div>Tel: +1-630-850-5555</div>
+            <div><a href={'tel:+16308505555'}>+1-630-850-555</a></div>
             <div>Room Block Available - Mention Nolte/Pavich Wedding</div>
           </div>
         </div>
