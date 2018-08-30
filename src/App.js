@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import objectFitImages from 'object-fit-images';
 
 import Navbar from './components/Navbar/Navbar';
 import LandingImage from './components/LandingImage/LandingImage';
@@ -9,6 +10,11 @@ import Accomodations from './components/Accomodations/Accomodations';
 import './App.css';
 
 class App extends Component {
+
+  componentDidMount() {
+    objectFitImages();
+  }
+
   render() {
     return (
       <div>

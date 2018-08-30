@@ -21,12 +21,14 @@ const OurStory = () => {
         slidesToShow={1}
         slidesToScroll={1}
         arrows
+        draggable={false}
+        touchMove={false}
         className={'our-story-slider'}
       >
         <div>
           <div className={'our-story-slide'}>
             <div><img src={Harpos} alt={'Harpos'} /></div>
-            <div>Adam and Lindsay's story begins at one of the best college bars in the nation, Harpos. Mizzou homecoming weekend 2015, Adam was showing off his impressive dance moves to RPI Music's country hits. Adam's friend and groomsman, Nick, felt bad that such talent was alone on the dance floor. Knowing Lindsay through a mutual friend of his, Nick pursuaded (and probably paid) Lindsay to dance with Adam.</div>
+            <div>Adam and Lindsay's story begins at one of the best college bars in the nation, Harpos. Mizzou homecoming weekend 2015, Adam was showing off his impressive dance moves to RPI Music's country hits. Adam's friend and groomsman, Nick, felt bad that such talent was alone on the dance floor. Knowing Lindsay through their mutual friend, Maddie, Nick pursuaded (and probably paid) Lindsay to dance with Adam.</div>
           </div>
         </div>
         <div>
@@ -48,6 +50,7 @@ const OurStory = () => {
           </div>
         </div>
       </Slider>
+      <div className={'overlay-for-touch-events'} />
     </div>
   );
 }

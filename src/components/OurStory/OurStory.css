@@ -30,6 +30,16 @@
   margin-right: 40px;
 }
 
+.overlay-for-touch-events {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  right: 40px;
+  width: calc(100% - 80px);
+  height: 100%;
+}
+
 .our-story-slide {
   display: flex;
   height: 450px;
@@ -51,8 +61,10 @@
   height: auto;
   max-height: 450px;
   object-fit: contain;
+  font-family: 'object-fit: contain;';
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
 .slick-next {

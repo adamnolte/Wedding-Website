@@ -15,7 +15,9 @@
   height: 450px;
   width: 100%;
   object-fit: cover;
+  font-family: 'object-fit: cover;';
   opacity: .8;
+  display: block;
 }
 
 .event-details-overlay {

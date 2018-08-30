@@ -1,6 +1,6 @@
 .landing-image {
   height: calc(100vh - 70px);
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-image: url("./adam-lindsay.JPG");
   background-size: cover;
