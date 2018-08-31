@@ -34,7 +34,7 @@ const OurStory = () => {
         <div>
           <div className={'our-story-slide'}>
             <div><img src={Tailgating} alt={'Tailgating'} /></div>
-            <div>Adam and Lindsay soon disovered they were neighbors. They actually had been neighbors for over year and Adam still wonders how Lindsay never noticed him sitting on the front porch with his cooler and speaker. During their senior year at Mizzou they enjoyed tailgating with friends and many more nights <s>at Harpos</s> studying at the library.</div>
+            <div>Adam and Lindsay soon discovered they were neighbors. They actually had been neighbors for over year and Adam still wonders how Lindsay never noticed him sitting on the front porch with his cooler and speaker. During their senior year at Mizzou they enjoyed tailgating with friends and many more nights <s>at Harpos</s> studying at the library.</div>
           </div>
         </div>
         <div>

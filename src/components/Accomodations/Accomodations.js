@@ -33,7 +33,7 @@ const Accomodations = () => {
               <div>Make a Splash at the Large Outdoor/Indoor Pool at Hotel</div>
             </div>
             <div>
-              18 Golf Course at Hotel
+              18 Hole Golf Course at Hotel
               <div>Teetimes Available Upon Room Reservation</div>
             </div>
           </div>
