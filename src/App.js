@@ -8,6 +8,7 @@ import WeddingParty from './components/WeddingParty/WeddingParty';
 import EventDetails from './components/EventDetails/EventDetails';
 import Accomodations from './components/Accomodations/Accomodations';
 import './App.css';
+import Registry from './components/Registry/Registry';
 
 class App extends Component {
 
@@ -24,6 +25,7 @@ class App extends Component {
         <WeddingParty />
         <EventDetails />
         <Accomodations />
+        <Registry />
       </div>
     );
   }

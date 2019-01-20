@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import scrollTo from 'scroll-to';
+
 import './Navbar.css';
 
 const NavLinks = ({ className, navigate }) => {
@@ -47,6 +48,14 @@ const NavLinks = ({ className, navigate }) => {
       >
         Accomodations
       </div>
+      <div
+        className={'link'}
+        role={'button'}
+        tabIndex={0}
+        onClick={() => { navigate('Registry'); }}
+      >
+        Registry
+      </div>
     </div>
   );
 }
@@ -80,6 +89,8 @@ class Navbar extends Component {
     const element = document.getElementById(id);
     if (element) {
       scrollTo(0, element.getBoundingClientRect().top - document.body.getBoundingClientRect().top);
+    } else {
+
     }
     if (this.state.navOpen) {
       this.setState({

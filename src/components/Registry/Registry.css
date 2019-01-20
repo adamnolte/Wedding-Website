@@ -1,0 +1,39 @@
+.registry-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.registry-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.registry-item-wrapper img {
+  height: 100px;
+  width: 200px;
+  object-fit: contain;
+}
+
+.registry-item-wrapper button {
+  color: #fff;
+  background-color: #000;
+  outline: none;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .registry-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .registry-item-wrapper {
+    flex-basis: 100%;
+  }
+}

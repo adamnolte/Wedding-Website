@@ -4,7 +4,7 @@ import Person from './Person';
 import Beffa from './Groomsmen/Beffa.jpg';
 import Brett from './Groomsmen/Brett.jpg';
 import Brian from './Groomsmen/Brian.jpg';
-import Jake from './Groomsmen/Jake.png';
+import Jake from './Groomsmen/Jake.PNG';
 import Jared from './Groomsmen/Jared.jpg';
 import Joe from './Groomsmen/Joe.jpg';
 import Kyle from './Groomsmen/Kyle.jpg';
