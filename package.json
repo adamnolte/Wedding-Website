@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.4.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
     "@fortawesome/react-fontawesome": "0.1.0-11",
     "moment": "^2.22.2",
     "object-fit-images": "^3.2.4",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4",
+    "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.0",
+    "react-dom": "^16.8.6",
+    "react-responsive-modal": "^3.6.0",
+    "react-scripts": "^3.0.0",
     "react-slick": "^0.23.1",
     "scroll-to": "0.0.2",
     "slick-carousel": "^1.8.1"
@@ -20,5 +23,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
