@@ -48,8 +48,13 @@ const Registry = () => {
           <Modal open={isModalOpen} onClose={toggleModal} center>
             <div className={'honeymoon-modal'}>
               <h1>Honeymoon Fund in Hawaii</h1>
-              <span>We will be spending our honeymoon in Hawaii on both Maui and Kauai.</span>
-              <span>Please call our travel agent Peggy Morgan at 630-655-9462 and mention our names to book.</span>
+              <span className={'modal-subtitle'}>
+                We will be spending our honeymoon in Hawaii on both Maui and Kauai.
+              </span>
+              <span className={'modal-subtitle'}>
+                Please call our travel agent Peggy Morgan at <a href={'tel:+16306559462'}>630-655-9462</a> and mention
+                our names to book.
+              </span>
               <div>
                 <h2>NAPALI COAST SUNSET CRUISE - $320</h2>
                 <span>

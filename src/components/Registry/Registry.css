@@ -44,6 +44,15 @@
   display: block;
 }
 
+.honeymoon-modal .modal-subtitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.honeymoon-modal a {
+  display: inline;
+}
+
 .honeymoon-modal h2 {
   margin-top: 30px;
   margin-bottom: 15px;
